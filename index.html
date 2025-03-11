@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">🎂 Happy Birthday, Samu! ❤️</h1>
+        <p class="fade-in">You are the most special person in my life, and even though we are miles apart, my heart is always with you.</p>
+        
+        <button id="openGifts" class="btn">Open Your Gifts 🎁</button>
+        
+        <div id="giftsContainer" class="hidden fade-in">
+            <h1>🎉 Surprise! 🎉</h1>
+            <div class="gift" onclick="showGiftMessage('A virtual hug 🤗\nImagine me wrapping my arms around you tightly, whispering how much I love you. Close your eyes and feel my warmth surrounding you.')">🎀</div>
+            
+            <div class="gift" onclick="showGiftMessage('A romantic poem just for you ❤️\n\nYou walked into my life like a gentle breeze,\nFilling my heart with warmth and ease.\nWith every smile, you light my way,\nLike the golden sun on a perfect day.\n\nYour laughter sings like a sweet melody,\nA tune that forever stays with me.\nYour touch feels like the softest dream, \nA love so pure, like a moonbeam.\n\nWhen you are near, time slows down,\nIn your love, I wish to drown.\nEven in silence, you speak to my soul,\nWith you, my heart is completely whole.\n\nMorning begins with thoughts of you,\nNights end with dreams so true.\nYou are my love, my heart’s sweet rhyme,\nForever yours, till the end of time.\n\n💖 I love you more than words can say! 💖')">📜</div>
+            
+            <div class="gift" onclick="playVideo()">🎵</div>
+            
+            <div class="gift" onclick="showGiftImage('image.jpg')">💑</div>
+            
+        </div>
+
+        <!-- Hidden Video -->
+        <div id="videoContainer" class="hidden fade-in">
+            <video id="birthdayVideo" width="320" height="240" controls>💑
+                <source src="birthdayvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="close-btn" onclick="hideVideo()">✖ Close</button>
+        </div>
+        <!-- Hidden Image Container -->
+<div id="imageContainer" class="hidden fade-in">
+    <img id="giftImage" src="" alt="Gift Image">
+    <button class="close-btn" onclick="hideImage()">✖ Close</button>
+</div>
+
+        <p id="giftMessage" class="fade-in"></p>
+    </div>
+</body>
+</html>
